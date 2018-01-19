@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  // border-top: 5px solid $grey-color-dark;
+  // border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -11,12 +11,14 @@
 }
 
 .site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  @include relative-font-size(4);
+  font-weight: 700;
+  line-height: $base-line-height * $base-font-size * 6;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
+  // float: left;
+  text-align: center;
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 
   &,
   &:visited {
@@ -29,7 +31,7 @@
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
-      display: none;
+    display: none;
   }
 
   .menu-icon {
@@ -199,6 +201,15 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+  padding: 2px;
+  border: 0;
+  border-bottom: 1px solid #e1e4e5;
+  margin-top: 10px;
+  margin-bottom: 24px;
+
+  time {
+    float: right;
+  }
 }
 
 .post-link {
@@ -216,6 +227,10 @@
 }
 
 .post-title {
+  font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+  font-weight: 700;
+  color: #404040;
+
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
@@ -250,5 +265,76 @@
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }
+  }
+}
+
+
+
+/**
+ * Sidebar
+ */
+.main-wrapper {
+  // TODO: responsiveness
+  margin-left: 300px;
+}
+
+.site-sidebar {
+  z-index: 1000;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  // float: left;
+  background-color: #171A2F;
+
+  .sidebar-title {
+    display: block;
+    font-size: 100%;
+    font-weight: bold;
+    color: #fcfcfc;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  input {
+    width: 80%;
+    border-radius: 50px;
+    border-color: transparent;
+    padding: 6px 10px;
+    margin-left: 12px;
+  }
+
+  ul {
+    margin-top: 20px;
+    list-style: none;
+    margin-left: 0;
+  }
+
+  ul li {
+    list-style: none;
+    line-height: 16px;
+    padding: 5px 15px;
+  }
+
+  ul li:hover {
+    background-color: #454545;
+  }
+
+  ul li span {
+    font-size: 70%;
+    font-style: italic;
+    color: #b3b3b3;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  ul li a {
+    display: block;
+    position: relative;
+    font-size: 90%;
+    color: #b3b3b3;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
