@@ -1,33 +1,29 @@
-# minima
+# Jekyll ReadTheDocs
 
-*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
+*Jekyll-ReadTheDocs is a fork of Jekyll's Minima base theme. Documentation below may refer to minima instead of this fork.*
 
 [Theme preview](https://jekyll.github.io/minima/)
 
-![minima theme preview](/screenshot.png)
+![readthedocs theme preview](/screenshot.png)
 
 ## Installation
 
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "minima"
+gem "jekyll-readthedocs"
 ```
 
 And add this line to your Jekyll site:
 
 ```yaml
-theme: minima
+theme: jekyll-readthedocs
 ```
 
 And then execute:
 
     $ bundle
 
-
-## Contents At-A-Glance
-
-Minima has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
 
 ### Layouts
 
@@ -47,6 +43,7 @@ Refers to snippets of code within the `_includes` directory that can be inserted
   - `google-analytics.html` &mdash; Inserts Google Analytics module (active only in production environment).
   - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.
   - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here.
+  - `sidebar.html` &mdash; Defines the site's ReadTheDocs-like sidebar.
 
 ### Sass
 
@@ -175,7 +172,7 @@ Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Pawamoy/jekyll-readthedocs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

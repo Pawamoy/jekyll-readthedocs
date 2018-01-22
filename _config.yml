@@ -32,7 +32,7 @@ minima:
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-readthedocs
 exclude:
   - Gemfile
   - Gemfile.lock
