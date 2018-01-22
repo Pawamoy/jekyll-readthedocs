@@ -2,9 +2,9 @@
 
 *Jekyll-ReadTheDocs is a fork of Jekyll's Minima base theme. Documentation below may refer to minima instead of this fork.*
 
-[Theme preview](https://jekyll.github.io/minima/)
+[Theme preview](http://pawamoy.github.io/) (my own blog using this theme).
 
-![readthedocs theme preview](/screenshot.png)
+![jekyll readthedocs theme preview](/screenshot.png)
 
 ## Installation
 
@@ -24,6 +24,21 @@ And then execute:
 
     $ bundle
 
+
+### With GitHub Pages
+To use this theme with GitHub Pages, you might need to declare the theme as remote in your `_config.yml` file:
+
+```yaml
+#theme: jekyll-readthedocs
+remote_theme: pawamoy/jekyll-readthedocs
+```
+
+And your `Gemfile` should be:
+
+```ruby
+source "https://rubygems.org"
+gem 'github-pages', group: :jekyll_plugins
+```
 
 ### Layouts
 
