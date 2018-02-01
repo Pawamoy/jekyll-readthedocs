@@ -99,6 +99,8 @@ It will be automatically included only when your site contains one or more valid
 
 The title for this section is `Posts` by default and rendered with an `<h2>` tag. You can customize this heading by defining a `list_title` variable in the document's front matter.
 
+To add post excerpts in the post listing, set `use_excerpt: true` in `_config.yml`. 
+
 --
 
 ### Customization

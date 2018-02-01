@@ -20,6 +20,7 @@ layout: default
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           </h3>
+          {% if site.use_excerpt %}{{ post.excerpt }}{% endif %}
         </li>
       {% endfor %}
     </ul>
