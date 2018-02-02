@@ -24,7 +24,7 @@
 		    q = getUrlParameter("q"),
 		    re = new RegExp(q, "gi");
 
-		$.getJSON('{{ site.baseurl }}/search.json', function(data) {
+		$.getJSON('{{ "/assets/search.json" | absolute_url }}', function(data) {
 			for (var i = 0; i < data.length; i++) {
 				var matching = false;
 				if (data[i].title.search(re) >= 0) {
