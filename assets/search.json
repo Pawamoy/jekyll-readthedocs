@@ -6,7 +6,7 @@ layout: null
   {% for post in site.posts %}
     {
       "title"    : "{{ post.title | escape }}",
-      "content"  : "{{ post.content | slugify: 'latin' | split: '-' | uniq | join }}",
+      "content"  : "{{ post.content | slugify | split: '-' | uniq | join }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ post.url | relative_url }}",
