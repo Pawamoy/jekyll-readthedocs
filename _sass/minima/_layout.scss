@@ -311,7 +311,6 @@
   }
 
   ul li {
-    list-style: none;
     line-height: 16px;
     padding: 5px 15px;
   }
@@ -324,7 +323,6 @@
     font-size: 70%;
     font-style: italic;
     color: #b3b3b3;
-    list-style: none;
     text-decoration: none;
   }
 
@@ -333,8 +331,21 @@
     position: relative;
     font-size: 90%;
     color: #b3b3b3;
-    list-style: none;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  ul li.active {
+    background-color: $background-color;
+    font-weight: bold;
+
+    span, a {
+      color: $text-color;
+    }
+
+    // a {
+    //   pointer-events: none;
+    //   cursor: default;
+    // }
   }
 }
