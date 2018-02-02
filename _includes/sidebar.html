@@ -1,8 +1,9 @@
 <div class="site-sidebar">
   <a class="sidebar-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
-  <input type=text placeholder="Search blog">
-  <br>
+  <form method="get" action="{{ site.baseurl }}/search.html">
+    <input type="text" name="q" placeholder="Search blog">
+  </form>
 
   {% assign default_paths = site.pages | map: "path" %}
   {% assign page_paths = site.header_pages | default: default_paths %}
