@@ -99,7 +99,7 @@ It will be automatically included only when your site contains one or more valid
 
 The title for this section is `Posts` by default and rendered with an `<h2>` tag. You can customize this heading by defining a `list_title` variable in the document's front matter.
 
-To add post excerpts in the post listing, set `use_excerpt: true` in `_config.yml`. 
+To add post excerpts in the post listing, set `show_excerpt: true` in `_config.yml`.
 
 --
 
@@ -121,6 +121,20 @@ The site's default CSS has now moved to a new place within the gem itself, [`ass
   - Go to your local minima gem installation directory ( run `bundle show minima` to get the path to it ).
   - Copy the `assets/` folder from there into the root of `<your-site>`
   - Change whatever values you want, inside `<your-site>/assets/main.scss`
+
+--
+
+### Customize navigation links
+
+This allows you to set which pages you want to appear in the navigation area and configure order of the links.
+
+For instance, to only link to the `about` and the `portfolio` page, add the following to you `_config.yml`:
+
+```yaml
+header_pages:
+  - about.md
+  - portfolio.md
+```
 
 --
 
@@ -173,6 +187,12 @@ pinterest_username: jekyll
 youtube_username: jekyll
 googleplus_username: +jekyll
 rss: rss
+
+mastodon:
+ - username: jekyll
+   instance: example.com
+ - username: jekyll2
+   instance: example.com
 ```
 
 --
@@ -186,6 +206,16 @@ To enable Google Anaytics, add the following lines to your Jekyll site:
 ```
 
 Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
+
+--
+
+### Enabling Excerpts on the Home Page
+
+To display post-excerpts on the Home Page, simply add the following to your `_config.yml`:
+
+```yaml
+show_excerpts: true
+```
 
 ## Contributing
 
