@@ -51,10 +51,10 @@
   @include media-query($on-palm) {
     position: absolute;
     top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
+    right: 0;
+    background-color: #171A2F;
+    // border: 1px solid $grey-color-light;
+    // border-radius: 5px;
     text-align: right;
 
     label[for="nav-trigger"] {
@@ -274,8 +274,13 @@
  * Sidebar
  */
 .main-wrapper {
-  // TODO: responsiveness
+
   margin-left: 300px;
+
+  @include media-query($on-palm) {
+    margin-left: 0;
+    margin-top: 80px;
+  }
 }
 
 .site-sidebar {
@@ -283,8 +288,14 @@
   height: 100%;
   width: 300px;
   position: fixed;
-  // float: left;
   background-color: #171A2F;
+
+  @include media-query($on-palm) {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
 
   .sidebar-title {
     display: block;
