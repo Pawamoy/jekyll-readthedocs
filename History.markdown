@@ -1,4 +1,4 @@
-## HEAD
+## 2.4.0
 
 ### Minor Enhancements
 
