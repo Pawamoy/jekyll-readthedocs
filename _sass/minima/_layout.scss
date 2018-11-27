@@ -293,12 +293,22 @@
   width: 300px;
   position: fixed;
   background-color: #171A2F;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   @include media-query($on-palm) {
     height: 50px;
     width: 100%;
     position: absolute;
     top: 0;
+  }
+
+  .no-scroll-bar {
+    width: 320px;
+    padding-right: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
   }
 
   .sidebar-title {
@@ -319,38 +329,38 @@
     margin-left: 12px;
   }
 
-  ul {
+  #post-list {
     margin-top: 20px;
     list-style: none;
     margin-left: 0;
   }
 
-  ul li {
+  #post-list > li {
     line-height: 16px;
     padding: 5px 15px;
   }
 
-  ul li:hover {
+  #post-list > li:hover {
     background-color: #454545;
   }
 
-  ul li span {
+  #post-list > li > span {
     font-size: 70%;
     font-style: italic;
     color: #b3b3b3;
     text-decoration: none;
   }
 
-  ul li a {
+  #post-list > li > a {
     display: block;
     position: relative;
     font-size: 90%;
     color: #b3b3b3;
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
   }
 
-  ul li.active {
+  #post-list > li.active {
     background-color: $background-color;
     font-weight: bold;
 
@@ -363,4 +373,52 @@
     //   cursor: default;
     // }
   }
+
+  .sidebar-headings {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    margin-left: 0;
+
+    li {
+      font-weight: normal;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    .sidebar-h1 {
+      font-size: 95%;
+    }
+
+    .sidebar-h2 {
+      font-size: 90%;
+      padding-left: 16px;
+    }
+
+    .sidebar-h3 {
+      font-size: 85%;
+      padding-left: 32px;
+    }
+
+    .sidebar-h4 {
+      font-size: 80%;
+      padding-left: 48px;
+    }
+
+    .sidebar-h5 {
+      font-size: 75%;
+      padding-left: 64px;
+    }
+
+    .sidebar-h6 {
+      font-size: 70%;
+      padding-left: 80px;
+    }
+  }
+
+
 }
