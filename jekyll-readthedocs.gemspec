@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-readthedocs"
-  spec.version       = "0.2.4"
+  spec.version       = "0.3.0"
   spec.authors       = ["Timothée Mazzucotelli"]
-  spec.email         = ["timothee.mazzucotelli@gmail.com"]
+  spec.email         = ["timothee.mazzucotelli@pm.me"]
 
   spec.summary       = "A ReadTheDocs theme based on minima."
-  spec.homepage      = "https://github.com/Pawamoy/jekyll-readthedocs"
+  spec.homepage      = "https://github.com/pawamoy/jekyll-readthedocs"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
