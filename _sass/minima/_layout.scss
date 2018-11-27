@@ -329,29 +329,29 @@
     margin-left: 12px;
   }
 
-  #post-list {
+  .sidebar-list {
     margin-top: 20px;
     list-style: none;
     margin-left: 0;
   }
 
-  #post-list > li {
+  .sidebar-list > li {
     line-height: 16px;
     padding: 5px 15px;
   }
 
-  #post-list > li:hover {
+  .sidebar-list > li:hover {
     background-color: #454545;
   }
 
-  #post-list > li > span {
+  .sidebar-list > li > span {
     font-size: 70%;
     font-style: italic;
     color: #b3b3b3;
     text-decoration: none;
   }
 
-  #post-list > li > a {
+  .sidebar-list > li > a {
     display: block;
     position: relative;
     font-size: 90%;
@@ -360,7 +360,7 @@
     text-decoration: none;
   }
 
-  #post-list > li.active {
+  .sidebar-list > li.active {
     background-color: $background-color;
     font-weight: bold;
 

@@ -22,7 +22,7 @@
         </span>
       </label>
 
-      <ul id="page-list" class="trigger">
+      <ul id="page-list" class="trigger sidebar-list">
         {% for path in page_paths %}
           {% assign my_page = site.pages | where: "path", path | first %}
           {% if my_page.title %}
@@ -33,7 +33,7 @@
     <!-- {% endif %} -->
 
       {% if site.posts.size > 0 %}
-        <ul id="post-list" class="trigger">
+        <ul id="post-list" class="trigger sidebar-list">
           {% for post in site.posts %}
             <li class="{% if page.title == post.title %}active{% endif %}">
               {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
