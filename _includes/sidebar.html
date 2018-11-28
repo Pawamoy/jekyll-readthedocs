@@ -1,11 +1,6 @@
 <div class="site-sidebar">
-  <div class="no-scroll-bar">
 
     <a class="sidebar-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-    <form method="get" action="{{ site.baseurl }}/search.html">
-      <input type="text" name="q" placeholder="Search blog">
-    </form>
 
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
@@ -21,6 +16,10 @@
           </svg>
         </span>
       </label>
+
+      <form class="trigger" method="get" action="{{ site.baseurl }}/search.html">
+        <input type="text" name="q" placeholder="Search blog">
+      </form>
 
       <ul id="page-list" class="trigger sidebar-list">
         {% for path in page_paths %}
@@ -45,5 +44,4 @@
       {% endif %}
     </nav>
 
-  </div>
 </div>
